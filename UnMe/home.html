@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UndMe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Slider container */
+        .slider-container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 500px;
+            
+        }
+
+        /* Slider content */
+        .slides {
+            display:flex;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        /* Individual slide */
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Navigation dots */
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .slide img {
+            width: 100%; /* Adjust the width as needed */
+            height: 50%; /* Maintain aspect ratio */
+            display: block; /* Remove extra space beneath image */
+        }
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="header">
+        <a>HOME</a>
+    </div>
+</header>
+<div class="slider-container">
+    <div class="slides">
+        <div class="slide">
+            <!-- Your content for the first slide goes here -->
+            <img src="job.png" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <!-- Your content for the second slide goes here -->
+            <img src="internship.jpg" alt="Slide 2">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <div class="slider-dots"></div>
+</div>
+
+<script>
+    // JavaScript for automatic slider functionality with dots
+    let currentIndex = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    const dotsContainer = document.querySelector('.slider-dots');
+
+    // Create dots based on the number of slides
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        dotsContainer.appendChild(dot);
+        dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateSlider();
+        });
+    }
+
+    function updateSlider() {
+        const translateValue = -currentIndex * 100 + '%';
+        slides.style.transform = 'translateX(' + translateValue + ')';
+
+        // Update active dot
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    // Automatic sliding every 3 seconds
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+    }, 3000);
+</script>
+<footer id="header" id="link">COPY WRITES TO NAME-LESS &#9829;
+    <p> catch us on</p>
+    <!-- <span href="https://mail.google.com/mail/u/1/#inbox" style="display: inline-block; font-size: 24px; color: #000000; background: #cccccc; border-radius: 6px; padding: 10px 20px;">♡ NAME-LESS ♡</span> -->
+    <a href="https://mail.google.com/mail/u/1/#inbox">
+        ♡ NAME-LESS ♡
+    </a>
+</footer>
+</body>
+</html>
