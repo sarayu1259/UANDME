@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+<div id="back">
+    <header>
     <div id="navbar">
         <div id="symbol">
            <img src="logo.png">
         </div>
-        <div>
-        <a>Account</a>
-        <a>About</a>
-        <a >Contact Us</a>
-    </div>
+        <div id="items">
+        <a>  Account</a>
+        </div>
+        <div id="items1"><a>  About</a></div>
+        <div id="items2"><a >  Contact</a></div>
     </div>
 </header>
 <div class="slider-container">
@@ -33,20 +34,52 @@
     </div>
     <div class="slider-dots"></div>
 </div>
-<div id="main">
-    <a href="job.html">
+<!-- <div id="main" class="polaroid">
+    <!-- <div class="polaroid"> -->
+    <!-- <a href="job.html">
+    </div>
+    <div  class="container">
     <div id="one">JOB</div>
     </a>
+    </div>
+    <div class="polaroid">
     <a href="internship.html">
+    </div>
+    <div  class="container">
     <div id="one">INTERNSHIP</div>
     </a>
 </div>
+</div>
+</div> --> -->
+<div id="mainbody">
+    <div class="polaroid" id="job">
+        <a href="internship.html"><img src="Internship.jpg" alt="5 Terre" style="width:100%"></a>
+        <div class="container">
+        <p> INTERNSHIP</p>
+        </div>
+    </div>
+    <div class="polaroid" id="internship">
+        <a href="job.html"><img src="jobs.jpg" alt="5 Terre" style="width:100%"></a>
+        <div class="container">
+        <p>JOB</p>
+        </div>
+    </div>
+    </div>
+<!-- <footer id="footer" class="link">
+    <p>COPY WRITES TO NAME-LESS &#9829;</p>
+    <p> catch us on</p>
+     <span href="https://mail.google.com/mail/u/1/#inbox" style="display: inline-block; font-size: 24px; color: #000000; background: #cccccc; border-radius: 6px; padding: 10px 20px;">♡ NAME-LESS ♡</span> -->
+    <!-- <p>♡ NAME-LESS ♡</p> -->
+<!-- </footer> --> 
+<script src="index.js"></script>
+</body>
 <footer id="footer" class="link">
+    <div class="f2">
     <p>COPY WRITES TO NAME-LESS &#9829;</p>
     <p> catch us on</p>
     <!-- <span href="https://mail.google.com/mail/u/1/#inbox" style="display: inline-block; font-size: 24px; color: #000000; background: #cccccc; border-radius: 6px; padding: 10px 20px;">♡ NAME-LESS ♡</span> -->
     <p>♡ NAME-LESS ♡</p>
+</div>
 </footer>
-<script src="index.js"></script>
-</body>
+
 </html>
