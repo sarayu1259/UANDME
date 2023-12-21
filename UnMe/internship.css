@@ -61,12 +61,12 @@
   #inbody{
     width: 100%;
   }
-  body{
-    background-color:rgb(150, 146, 146);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
+body {
+  background-color: rgb(150, 146, 146);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px; /* Adjust the padding to be equal to the height of your fixed header */
 }
 /* #main{
     display: flex;
