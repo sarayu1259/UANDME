@@ -15,7 +15,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 50px; /* Adjust the padding to be equal to the height of your fixed header */
+    padding-top: 60px; /* Adjust the padding to be equal to the height of your fixed header */
+    background-color: azure;
+    display: inline-block;
+    margin-top: 0;
 }
 
 #back{
@@ -170,11 +173,6 @@ color: azure;
 #items2:hover{
     background-color: rgb(150, 146, 146);
     color: azure;
-}
-body{
-    background-color: azure;
-    display: inline-block;
-    margin-top: 0;
 }
 .polaroid {
     width: 30%;
