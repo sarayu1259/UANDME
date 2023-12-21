@@ -3,16 +3,23 @@
 } */
 
 .two{
-    display:inline-block;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
 }
 .flip-card {
     background-color: transparent;
-    width: auto;
-    height: auto;
+    width: 300px;
+    height: 300px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin:10px;
+    border-radius:75%;
+    overflow:hidden;
+    
   }
   
   /* This container is needed to position the front and back side */
