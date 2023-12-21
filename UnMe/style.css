@@ -10,6 +10,14 @@
     top: 0px;
     padding: 5px;
 } */
+body {
+    background-color: rgb(150, 146, 146);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; /* Adjust the padding to be equal to the height of your fixed header */
+}
+
 #back{
     background-color:rgb(150, 146, 146);
 }
