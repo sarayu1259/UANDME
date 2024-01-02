@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            background-color: white;
+            color: #969696;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        #navbar img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        #symbol {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #969696;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+        }
+
+        #items, #items1, #items2 {
+            margin-left: auto;
+        }
+
+        #items, #items1, #items2 {
+            margin-left: 100px;
+            width: 100px;
+            text-align: center;
+            margin-right: 100px;
+            justify-content: center;
+            display: inline;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        #items:hover,
+        #items1:hover,
+        #items2:hover {
+            background-color: rgb(150, 146, 146);
+            color: azure;
+        }
+
+        #footer {
+            background-color: rgb(209, 207, 207);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+            margin: 50px auto; /* Adjusted margin for better positioning */
+            flex-grow: 1;
+            width: 500px;
+        }
+
+        .contact {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .contact img {
+            width: 80px; /* Set a fixed width for the images */
+            height: 80px; /* Set a fixed height for the images */
+            border-radius: 50%; /* Rounded border for contact images */
+            margin-bottom: 10px;
+        }
+
+        .contact-description {
+            font-style: italic;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar">
+            <div id="symbol">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div id="items">
+                <a>Account</a>
+            </div>
+            <div id="items1">
+                <a>About</a>
+            </div>
+            <div id="items2">
+                <a href="contacts.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="contact">
+            <h2>Chakrika Sai Dharmapuram</h2>
+            <div id="ima"><img src="chakri-image.jpg" alt="Contact 1"></div>
+            <p>Email: 22wh1a1299@bvrithyderabad.edu.in</p>
+        </div>
+
+        <div class="contact">
+            <h2>Bindhu Gujja</h2>
+            <div id="ima"><img src="bindhu.jpeg" alt="Contact 2"></div>
+            <p>Email: 22wh1a1276@bvrithyderabad.edu.in</p>
+        </div>
+
+        <div class="contact">
+            <h2>Akshaya Adlagatta</h2>
+            <div id="ima"><img src="akshaya.jpeg" alt="Contact 3"></div>
+            <p>Email: 22wh1a1246@bvrithyderabad.edu.in</p>
+        </div>
+
+        <div class="contact">
+            <h2>Sarayu Erram</h2>
+            <div id="ima"><img src="sarayu.jpeg" alt="Contact 4"></div>
+            <p>Email:  22wh1a1259@bvrithyderabad.edu.in</p>
+
+        </div>
+    </div>
+
+    <footer id="footer" class="link">
+        <div class="f2">
+            <p>COPY WRITES TO NAME-LESS &#9829;</p>
+            <p> catch us on</p>
+            <span href="https://mail.google.com/mail/u/1/#inbox" style="display: inline-block; font-size: 24px; color: #000000; background: #cccccc; border-radius: 6px; padding: 10px 20px;">♡ NAME-LESS ♡</span>
+            <p>♡ NAME-LESS ♡</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
