@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #tab {
+            border: border-box;
+            margin-left: 210px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            background-color: white;
+            color: #969696;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        #navbar img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        #symbol {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #969696;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+        }
+
+        #items:hover,
+        #items1:hover,
+        #items2:hover,
+        #items3:hover {
+            background-color: rgb(150, 146, 146);
+            color: azure;
+        }
+
+        #items,
+        #items1,
+        #items2,
+        #items3 {
+            margin-left: 100px;
+            width: 100px;
+            text-align: center;
+            margin-right: 100px;
+            justify-content: center;
+            display: inline;
+            align-items: center;
+            padding-left: 20px;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="Int.css"> -->
+</head>
+
+<body>
+    <div id="back">
+        <header>
+            <div id="navbar">
+                <div id="symbol">
+                    <img src="logo .png">
+                </div>
+                <div id="items3"><a href="home.html" style="color:green;">Home</a></div>
+                <div id="items" href="company.html">
+                    <a href="company.html" style="color:green;">
+                        Companies
+                    </a>
+                </div>
+                <div id="items1"><a> About</a></div>
+                <div id="items2"><a> Contact</a></div>
+            </div>
+        </header>
+        <div id="tab">
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Company</th>
+                    <th>Avg Package</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sara</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Microsoft</td>
+                    <td>90000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+    <footer id="footer" class="link">
+        <div class="f2">
+            <p>COPY WRITES TO NAME-LESS &#9829;</p>
+            <p> catch us on</p>
+            <!-- <span href="https://mail.google.com/mail/u/1/#inbox" style="display: inline-block; font-size: 24px; color: #000000; background: #cccccc; border-radius: 6px; padding: 10px 20px;">♡ NAME-LESS ♡</span> -->
+            <p>♡ NAME-LESS ♡</p>
+        </div>
+    </footer>
+</body>
+
+</html>
